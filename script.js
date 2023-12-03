@@ -13,3 +13,5 @@
     document.querySelector('.rightIcons').classList.remove('hidden');;
   document.querySelector('.searchContainer').querySelector('.material-symbols-outlined').textContent = 'search';
   }
+
+

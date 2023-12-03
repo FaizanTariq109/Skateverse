@@ -226,7 +226,7 @@
   color: black;
   font-weight: 600;
   transform: scale(1.4);
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .slogan > h2 {
@@ -387,4 +387,35 @@ th {
   width: 196px;
   height: 238px;
   background-color: #000;
+}
+
+.CustomContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.customsation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  min-width: 300px;
+  background-color: #BCBBBB;
+}
+
+.customsation > h1{
+  display: inline;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.CustomContainer > .right {
+  margin-right: 400px;
+}
+
+.picked{
+  background-color: greenyellow;
 }
