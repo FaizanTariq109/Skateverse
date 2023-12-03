@@ -30,6 +30,7 @@
 
 .home {
   text-align: center;
+  margin-top: 20px;
 }
 
 .profile {
@@ -40,6 +41,12 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.productContainer {
+  background-color: #acacac;
+  padding: 10px;
+  font-family: "Inter";
 }
 
 .profile > img {
@@ -85,89 +92,89 @@
   background: #c2c2c2;
 }
 
-.profileBtns>button{
-border-radius: 25px;
-background: #030303;
-width: 248px;
-height: 84px;
-flex-shrink: 0;
-  color: #FFF;
-font-family: Inter;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+.profileBtns > button {
+  border-radius: 25px;
+  background: #030303;
+  width: 248px;
+  height: 84px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   transition: all 0.4s ease-in-out;
 }
 
-.profileBtns > button:hover{
+.profileBtns > button:hover {
   cursor: pointer;
   background: white;
   color: black;
 }
 
-.loginContainer{
+.loginContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.loginContainer > div > div > label{
-color: #000;
-font-family: Inter;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-text-align: center;
+.loginContainer > div > div > label {
+  color: #000;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-line-height: normal;
+  line-height: normal;
   display: block;
 }
 
-.loginContainer > div > div > input{
+.loginContainer > div > div > input {
   padding-left: 20px;
   font-size: 26px;
-width: 659px;
-height: 55px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #C2C2C2;
+  width: 659px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #c2c2c2;
 }
 
-.forgot{
+.forgot {
   margin-top: 40px;
   text-align: center;
 }
 
-.forgot > a{
+.forgot > a {
   color: #434343;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.loginBtn{
+.loginBtn {
   margin-top: 50px;
   text-align: center;
 }
 
-.loginBtn > button{
-color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+.loginBtn > button {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   color: white;
-width: 248px;
-height: 84px;
-flex-shrink: 0;
-border-radius: 25px;
-background: #030303;
+  width: 248px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #030303;
 }
 
 .nav {
@@ -191,19 +198,22 @@ background: #030303;
   border-radius: 15px;
   width: 372px;
   align-items: center;
+  transition: all 0.4s ease-in-out;
 }
 
 .searchNav {
   background: transparent;
   width: 340px;
   outline: none;
+  padding-left: 20px;
+  font-size: 26px;
   border: none;
+  transition: all 0.4s ease-in-out;
   height: 56px;
   flex-shrink: 0;
 }
 
 .searchNav::placeholder {
-  padding: 20px;
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -221,12 +231,36 @@ background: #030303;
 
 .slogan > h2 {
   color: #000;
+  display: block;
   text-align: center;
   font-family: Inter;
   font-size: 40px;
   font-style: italic;
   font-weight: 700;
+  opacity: 1;
   line-height: normal;
+  transition: opacity 0.4s ease-in-out;
+}
+.searchNav::-webkit-search-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 8px;
+  cursor: pointer;
+  font-family: "Material Icons"; /* Specify the icon font family */
+  content: "clear"; /* Specify the icon code for 'clear' */
+  font-size: 18px; /* Adjust as needed */
+}
+
+/* Reset default styles for the search input */
+.searchNav::-webkit-search-cancel-button,
+.searchNav::-webkit-search-results-button,
+.searchNav::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.hidden {
+  opacity: 0;
+  display: none;
 }
 
 .menu {
@@ -260,6 +294,11 @@ background: #030303;
   line-height: normal;
 }
 
+.categories-list > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -271,7 +310,6 @@ background: #030303;
   text-align: center;
   height: 20vh;
 }
-
 
 .banner > span {
   border-left: 3px solid black;
@@ -289,6 +327,53 @@ background: #030303;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+/* CART */
+table {
+  margin-left: 80px;
+  font-size: 30px;
+  border-collapse: collapse;
+  width: 800px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Add padding for spacing */
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.button-container {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.button-container > button {
+  width: 248px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #030303;
+  color: white;
+  margin-left: 17vw;
+  font-size: 30px;
+  font-weight: 700;
+}
+.couponInput {
+  width: 372px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #bcbbbb;
+  padding-left: 20px;
+}
+
+.couponInput::placeholder {
+  font-size: 20px;
 }
 
 .new-arrivals {
