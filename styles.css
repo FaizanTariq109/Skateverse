@@ -419,3 +419,7 @@ th {
 .picked{
   background-color: greenyellow;
 }
+
+.rightIcons>a>span{
+  margin-right: 10px;
+}
