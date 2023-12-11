@@ -377,6 +377,7 @@ th {
 }
 
 .new-arrivals {
+  margin: 20px;
   display: flex;
   height: 40vh;
   justify-content: space-evenly;
