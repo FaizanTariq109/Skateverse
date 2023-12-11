@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -39,11 +40,13 @@
             type="search"
             class="searchNav"
             placeholder="What are you looking for?"
+            onfocus="hideSlogan()"
+            onblur="showSlogan()"
           />
         </form>
         <span class="material-symbols-outlined"> search </span>
       </div>
-      <div>
+      <div class="rightIcons">
         <!-- ICONS -->
         <a href="login.html">
           <span class="material-symbols-outlined"> edit </span>
@@ -62,10 +65,10 @@
       </div>
       <div class="categories-list">
         <ul>
-          <li> <a href="specials.html">Specials</a></li>
-          <li> <a href="sale.html">Sale</a></li>
-          <li> <a href="customize.html">Customise</a></li>
-          <li> <a href="accessories.html">Accessories</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="customize.html">Customise</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
         </ul>
       </div>
     </div>
