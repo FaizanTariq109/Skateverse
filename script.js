@@ -14,4 +14,3 @@
   document.querySelector('.searchContainer').querySelector('.material-symbols-outlined').textContent = 'search';
   }
 
-
