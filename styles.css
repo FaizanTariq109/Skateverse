@@ -66,8 +66,8 @@
 }
 
 .profileImg {
-  width: 508px;
-  height: 441px;
+  width: 415px;
+  height: 370px;
   flex-shrink: 0;
 }
 
@@ -95,12 +95,12 @@
 .profileBtns > button {
   border-radius: 25px;
   background: #030303;
-  width: 248px;
-  height: 84px;
+  width: 200px;
+  height: 70px;
   flex-shrink: 0;
   color: #fff;
   font-family: Inter;
-  font-size: 30px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
