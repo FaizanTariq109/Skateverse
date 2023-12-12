@@ -350,11 +350,12 @@ th {
 .button-container {
   margin-left: 80px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .button-container > button {
-  width: 248px;
-  height: 84px;
+  width: 210px;
+  height: 70px;
   flex-shrink: 0;
   border-radius: 25px;
   background: #030303;
